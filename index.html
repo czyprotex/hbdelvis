@@ -17,6 +17,14 @@
       <source src= "love.mp3" type="audio/mp3">
         NOT SUPPORT
     </audio>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("myAudio");
+        audio.play().catch(error => {
+            console.log("Autoplay prevented: ", error);
+        });
+    });
+</script>
     <div class="container">
       <div class="one">
         <h1 class="one">
